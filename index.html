@@ -6,9 +6,365 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Trivia Game || Sable Hoover</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 </head>
 
 <body>
+
+    <div class="container">
+
+
+        <!--Start Page-->
+        <div class="row" id="startP">
+            <h1>Vampire Quiz</h1>
+            <button id="startButton">Click here to begin</button>
+        </div>
+
+        <!--TIMER-->
+        <div class="row question" style="display:none;">
+
+        </div>
+
+        <!--Question 1 Box-->
+        <div class="row question" style="display:none;">
+            <!--Question-->
+            <div class="row">
+                <div class="col-md-8">
+                    <h1 class="text-center">Who was the first author to include Dracula in his work?</h1>
+                </div>
+            </div>
+            <!--Options-->
+            <div class="row">
+                <div class="col-md-12">
+                    <label>
+                        <input type="radio" name="q1" value="w" checked=""> Mary Shelley
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="r" checked=""> Bram Stoker
+                    </label><label>
+                        <input type="radio" name="q1" value="w" checked=""> Stephenie Meyer
+                    </label><label>
+                        <input type="radio" name="q1" value="w" checked=""> George R.R. Martin
+                    </label>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!--Question 2 Box-->
+        <div class="row question" style="display:none;">
+            <!--Question-->
+            <div class="row">
+                <div class="col-md-8">
+                    <h1 class="text-center">How do you prevent a corpse from reanimating into a vampire</h1>
+                </div>
+            </div>
+            <!--Options-->
+            <div class="row">
+                <div class="col-md-12">
+                    <label>
+                        <input type="radio" name="q2" value="w" checked=""> rebelling against the Orthodox Church
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="w" checked=""> Prevent dogs/cats from jumping over the
+                        grave
+                    </label><label>
+                        <input type="radio" name="q2" value="w" checked=""> Practicing witchcraft while alive
+                    </label><label>
+                        <input type="radio" name="q2" value="r" checked=""> All of the above
+                    </label>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Question 3 Box-->
+        <div class="row question" style="display:none;">
+            <!--Question-->
+            <div class="row">
+                <div class="col-md-8">
+                    <h1 class="text-center">What do vampires drink?</h1>
+                </div>
+            </div>
+            <!--Options-->
+            <div class="row">
+                <div class="col-md-12">
+                    <label>
+                        <input type="radio" name="q3" value="w" checked=""> Milk
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="r" checked=""> Blood
+                    </label><label>
+                        <input type="radio" name="q3" value="w" checked=""> Water
+                    </label><label>
+                        <input type="radio" name="q3" value="w" checked=""> Sprite
+                    </label>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Question 4 Box-->
+        <div class="row question" style="display:none;">
+            <!--Question-->
+            <div class="row">
+                <div class="col-md-8">
+                    <h1 class="text-center">What country do vampires originate from?</h1>
+                </div>
+            </div>
+            <!--Options-->
+            <div class="row">
+                <div class="col-md-12">
+                    <label>
+                        <input type="radio" name="q4" value="r" checked=""> Romania
+                    </label>
+                    <label>
+                        <input type="radio" name="q4" value="w" checked=""> Turkey
+                    </label><label>
+                        <input type="radio" name="q4" value="w" checked=""> France
+                    </label><label>
+                        <input type="radio" name="q4" value="w" checked=""> Germany
+                    </label>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Question 5 Box-->
+        <div class="row question" style="display:none;">
+            <!--Question-->
+            <div class="row">
+                <div class="col-md-8">
+                    <h1 class="text-center">Who is widely considered the first vampire?</h1>
+                </div>
+            </div>
+            <!--Options-->
+            <div class="row">
+                <div class="col-md-12">
+                    <label>
+                        <input type="radio" name="q5" value="w" checked=""> Nosferatu
+                    </label>
+                    <label>
+                        <input type="radio" name="q5" value="w" checked=""> Edward
+                    </label><label>
+                        <input type="radio" name="q5" value="r" checked=""> Dracula
+                    </label><label>
+                        <input type="radio" name="q5" value="w" checked=""> LaCroix
+                    </label>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Question 6 Box-->
+        <div class="row question" style="display:none;">
+            <!--Question-->
+            <div class="row">
+                <div class="col-md-8">
+                    <h1 class="text-center">What do vampire's typically sleep in?</h1>
+                </div>
+            </div>
+            <!--Options-->
+            <div class="row">
+                <div class="col-md-12">
+                    <label>
+                        <input type="radio" name="q6" value="w" checked=""> Cars
+                    </label>
+                    <label>
+                        <input type="radio" name="q6" value="w" checked=""> Beds
+                    </label><label>
+                        <input type="radio" name="q6" value="w" checked=""> Retirement homes
+                    </label><label>
+                        <input type="radio" name="q6" value="r" checked=""> Coffins
+                    </label>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Question 7 Box-->
+        <div class="row question" style="display:none;">
+            <!--Question-->
+            <div class="row">
+                <div class="col-md-8">
+                    <h1 class="text-center">Which of these is not lethal to a vampire?</h1>
+                </div>
+            </div>
+            <!--Options-->
+            <div class="row">
+                <div class="col-md-12">
+                    <label>
+                        <input type="radio" name="q7" value="w" checked=""> Silver
+                    </label>
+                    <label>
+                        <input type="radio" name="q7" value="w" checked=""> Running water
+                    </label><label>
+                        <input type="radio" name="q7" value="r" checked=""> Entering a house unbidden
+                    </label><label>
+                        <input type="radio" name="q7" value="w" checked=""> Garlic
+                    </label>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Question 8 Box-->
+        <div class="row question" style="display:none;">
+            <!--Question-->
+            <div class="row">
+                <div class="col-md-8">
+                    <h1 class="text-center">Which animal is closely tied to vampires?</h1>
+                </div>
+            </div>
+            <!--Options-->
+            <div class="row">
+                <div class="col-md-12">
+                    <label>
+                        <input type="radio" name="q8" value="r" checked=""> Bat
+                    </label>
+                    <label>
+                        <input type="radio" name="q8" value="w" checked=""> Rat
+                    </label><label>
+                        <input type="radio" name="q8" value="w" checked=""> Cat
+                    </label><label>
+                        <input type="radio" name="q8" value="w" checked=""> Dragon
+                    </label>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Question 9 Box-->
+        <div class="row question" style="display:none;">
+            <!--Question-->
+            <div class="row">
+                <div class="col-md-8">
+                    <h1 class="text-center">Which game's vampires are my favorite?</h1>
+                </div>
+            </div>
+            <!--Options-->
+            <div class="row">
+                <div class="col-md-12">
+                    <label>
+                        <input type="radio" name="q9" value="w" checked=""> Vampire the Masquerade: Bloodlines
+                    </label>
+                    <label>
+                        <input type="radio" name="q9" value="w" checked=""> Vampyr
+                    </label><label>
+                        <input type="radio" name="q9" value="w" checked=""> Skyrim: Dawnguard
+                    </label><label>
+                        <input type="radio" name="q9" value="r" checked=""> The Witcher 3
+                    </label>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Question 10 Box-->
+        <div class="row question" style="display:none;">
+            <!--Question-->
+            <div class="row">
+                <div class="col-md-8">
+                    <h1 class="text-center">What year did the first vampire film appear?</h1>
+                </div>
+            </div>
+            <!--Options-->
+            <div class="row">
+                <div class="col-md-12">
+                    <label>
+                        <input type="radio" name="q10" value="w" checked=""> 1938
+                    </label>
+                    <label>
+                        <input type="radio" name="q10" value="r" checked=""> 1922
+                    </label><label>
+                        <input type="radio" name="q10" value="w" checked=""> 1896
+                    </label><label>
+                        <input type="radio" name="q10" value="w" checked=""> 1901
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="row question" style="display:none;">
+            <button id="answerSubmit">
+                Submit Answers
+            </button>
+        </div>
+        <div class="scoreDisplay">
+
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+        </script>
+
+
+        <script>
+
+            $("#startButton").on("click", function (event) {
+                event.preventDefault();
+                $(".question").show();
+                $("#startP").hide();
+
+            });
+
+            $("#answerSubmit").on("click", function (event) {
+
+                event.preventDefault();
+
+                var option1 = $('input[name=q1]:checked').val();
+                var option2 = $('input[name=q2]:checked').val();
+                var option3 = $('input[name=q3]:checked').val();
+                var option4 = $('input[name=q4]:checked').val();
+                var option5 = $('input[name=q5]:checked').val();
+                var option6 = $('input[name=q6]:checked').val();
+                var option7 = $('input[name=q7]:checked').val();
+                var option8 = $('input[name=q8]:checked').val();
+                var option9 = $('input[name=q9]:checked').val();
+                var option10 = $('input[name=q10]:checked').val();
+
+                var scoreCounter = 0;
+
+                //The slopiest way to compare answers i could think of
+                if (option1 === "r") {
+                    scoreCounter++;
+                }
+                if (option2 === "r") {
+                    scoreCounter++;
+                }
+                if (option3 === "r") {
+                    scoreCounter++;
+                }
+                if (option4 === "r") {
+                    scoreCounter++;
+                }
+                if (option5 === "r") {
+                    scoreCounter++;
+                }
+                if (option6 === "r") {
+                    scoreCounter++;
+                }
+                if (option7 === "r") {
+                    scoreCounter++;
+                }
+                if (option8 === "r") {
+                    scoreCounter++;
+                }
+                if (option9 === "r") {
+                    scoreCounter++;
+                }
+                if (option10 === "r") {
+                    scoreCounter++;
+                }
+
+
+                $("#scoreDisplay").append("<h1 style='color:red;'>You got " + scoreCounter + " out of 10 correct!</h1>");
+
+
+            });
+
+        </script>
 
 </body>
 
